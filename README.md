@@ -37,13 +37,14 @@ tools.
 # Instructions ([SETUP.md](SETUP.md))
 
 [SETUP.md](SETUP.md) has 8 steps for installing SlackGPT in your workspace,
-along with customization options. Note: this setup uses the GPT-3.5 series transform
-(`text-davinci-003`) which is useful for zero-shot scenarios. Human-in-the-loop
-iteration is not yet supported in OpenAI's API (only the ChatGPT interace).
+along with customization options. Note: this setup uses the GPT-3.5 series
+transform (`text-davinci-003`) which is useful for zero-shot scenarios.
+Human-in-the-loop iteration is not yet supported in OpenAI's API (only the
+ChatGPT interace).
 
 **⚠️ Privacy**
 
-Data sent to ChatGPT is not private. Please do not send sensitive personal or 
+Data sent to ChatGPT is not private. Please do not send sensitive personal or
 company information to it. This code is provided is for learning purposes only.
 
 # Thank you and Attribution

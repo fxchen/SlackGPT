@@ -31,12 +31,12 @@ git clone git@github.com:fxchen/SlackGPT
 ```
 
 3. Get an OpenAI API key (https://beta.openai.com/account/api-keys). **Make sure
-to add billing information**.
+   to add billing information**.
 
 <img width="600" alt="instructions-open-ai" src="https://user-images.githubusercontent.com/178719/206929198-044141d0-2d85-4010-b437-051ca06db812.png">
 
-You can test your token validity with this command that executes a completion 
-on "hello world"
+You can test your token validity with this command that executes a completion on
+"hello world"
 
 ```
 TOKEN=YOUR_TOKEN_HERE
