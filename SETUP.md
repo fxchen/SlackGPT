@@ -30,9 +30,19 @@ slack login
 git clone git@github.com:fxchen/SlackGPT
 ```
 
-3. Get an OpenAI API key (https://beta.openai.com/account/api-keys)
+3. Get an OpenAI API key (https://beta.openai.com/account/api-keys). **Make sure
+to add billing information**.
 
 <img width="600" alt="instructions-open-ai" src="https://user-images.githubusercontent.com/178719/206929198-044141d0-2d85-4010-b437-051ca06db812.png">
+
+You can test your token validity with this command that executes a completion 
+on "hello world"
+
+```
+TOKEN=YOUR_TOKEN_HERE
+completion_openai() {curl -X POST https://api.openai.com/v1/completions -H 'Content-Type: application/json' -H "Authorization: Bearer $TOKEN" -d "{  \"model\": \"text-davinci-003\",  \"prompt\": \"$1\",  \"n\": 1}" | tr -d '\n' | jq '.choices[0].text'}
+completion_openai "hello world"
+```
 
 4. Save this secret. Create a new file in your `SlackGPT` folder called `.env`.
    Replace the string in this env file with your actual OpenAI token. Details:
