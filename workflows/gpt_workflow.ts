@@ -1,5 +1,5 @@
 import { DefineWorkflow, Schema } from "deno-slack-sdk/mod.ts";
-import { GPTRequestFunctionDefinition } from "../functions/gpt_request.ts";
+import { ChatGPTRequestFunctionDefinition } from "../functions/chat_gpt_request.ts";
 
 /**
  * A Workflow is a set of steps that are executed in order.
@@ -25,7 +25,7 @@ const GPTWorkflow = DefineWorkflow({
 
 // Step 1: Make the query to OpenAI's GPT
 const gptFunctionStep = GPTWorkflow.addStep(
-  GPTRequestFunctionDefinition,
+  ChatGPTRequestFunctionDefinition, // Alternatively, you can use GPTRequestFunctionDefinition
   {
     query: GPTWorkflow.inputs.query,
   },
