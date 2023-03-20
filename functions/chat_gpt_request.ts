@@ -41,7 +41,7 @@ export default SlackFunction(
 
     // API reference https://platform.openai.com/docs/guides/chat
     const response = await openAI.createChatCompletion({
-      model: "gpt-3.5-turbo",
+      model: "gpt-4",
       messages: [
         { "role": "user", "content": parsed_query },
       ],
